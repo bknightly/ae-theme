@@ -1,0 +1,149 @@
+/* --- class added by Wordpress block Editor in Dashboard --- */
+.block-editor-block-list__block {
+  overflow: hidden;
+}
+
+.editor-styles-wrapper {
+  @apply !bg-gradient-to-b from-gray-100 to-gray-300 m-0 !px-10;
+
+  .wp-block {
+    margin-top: 0;
+    margin-bottom: 0;
+    a {
+      @apply no-underline;
+    }
+    .block-container a {
+      @apply underline;
+    }
+  }
+  
+  .editor-post-title__input {
+    @apply text-5xl mb-8 font-lato font-bold;
+  }
+  
+  .editor-post-title__block {
+    margin-top: 2rem !important;
+    margin-bottom: 1.75rem !important;
+  }
+
+  .wp-block-heading {
+    @apply font-lato text-color-primary font-bold text-2xl !mb-10;
+  }
+  
+  h2.wp-block-heading {
+    @apply text-3xl;
+  }
+  h3.wp-block-heading {
+    @apply text-2xl;
+  }
+  h4.wp-block-heading {
+    @apply text-xl;
+  }
+  h5.wp-block-heading {
+    @apply text-lg;
+  }
+  h6.wp-block-heading {
+    @apply text-base;
+  }
+
+  .wp-block-paragraph {
+    @apply font-lato text-sm leading-7 mb-10 last:mb-0;
+  }
+
+  .wp-block-paragraph,
+  .wp-block-list {
+    a {
+      @apply text-color-primary font-normal transition;
+      &:hover {
+        @apply text-color-primary/50 underline;
+      }
+    }
+  }
+  
+  .wp-block-list {
+    @apply font-lato text-sm list-inside p-0 mb-10 last:!mb-0;
+    li {
+      @apply leading-7 mb-3;
+      ul,
+      ol {
+        @apply my-3;
+      }
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+  ul.wp-block-list {
+    @apply list-disc;
+  }
+  ol.wp-block-list {
+    @apply list-decimal;
+  }
+
+  li.wp-block-list-item {
+    div {
+      display: inline;
+    }
+    ul {
+      @apply ml-12 !mb-0;
+    }
+  }
+
+  .wp-block-gallery,
+  .wp-block-image {
+    @apply mb-10 last:mb-0;
+    figcaption {
+      @apply font-lato text-xs;
+    }
+  }
+  img {
+    border:none;
+  }
+  .wp-block-video {
+    @apply mb-10 last:mb-0;
+    video {
+      @apply w-full;
+    }
+  }
+  .wp-block-separator {
+    @apply my-8 md:my-12;
+  }
+
+  @screen lg {
+    li.wp-block-list-item {
+      ul {
+        @apply ml-16;
+      }
+    }
+  }
+
+  @screen xl {
+    .wp-block-paragraph,
+    .wp-block-list {
+      @apply text-base;
+    }
+  }
+
+  div.wp-block-embed {
+    @apply mb-10 last:mb-0;
+    figure {
+      @apply !mb-0;
+    }
+  }
+  
+  .wp-block[data-align="wide"] {
+    max-width: 1600px;
+  }
+  
+  .wp-block[data-align="full"] {
+    max-width: none;
+  }
+  
+  .wp-block-columns {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .block-editor-writing-flow {
+    padding: 0 2.5rem;
+  }
+}

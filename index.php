@@ -1,0 +1,45 @@
+<?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package LEH_Theme
+ */
+
+get_header(); ?>
+<main id="body">
+	<?php get_template_part( 'template-parts/title', 'blog' ); ?>
+	<div class="container mx-auto">
+		<div id="content" class="bg-white p-7 sm:p-8 md:p-12 lg:p-16 rounded-xl shadow -translate-y-8 lg:-translate-y-12">
+			<?php
+			if ( have_posts() ) : 
+				while ( have_posts() ) :
+					the_post();
+					/*
+						* Include the Post-Type-specific template for the content.
+						* If you want to override this in a child theme, then include a file
+						* called content-___.php (where ___ is the Post Type name) and that will be used instead.
+						*/
+					get_template_part( 'template-parts/content', get_post_type() );
+				endwhile;
+					$args = array(
+						'wrapper_class' => 'text-center'
+					);
+					wp_pagenavi($args);
+			else :
+				get_template_part( 'template-parts/content', 'none' );
+			endif;
+			?>
+		</div>
+	</div>
+</main><!-- #main -->
+
+<?php
+get_sidebar();
+get_footer();

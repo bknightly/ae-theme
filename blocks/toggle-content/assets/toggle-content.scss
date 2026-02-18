@@ -1,0 +1,104 @@
+/* --- NOTE: All elements are wrapped in .block-toggle-content to win CSS specificity with WP editor inline styles --- */
+
+.block-toggle-content_list-item .block-toggle-content_list-item_title:hover {
+  @apply bg-gradient-to-t from-color-primary/10 to-white shadow-lg;
+}
+.block-toggle-content_list-item.toggled .block-toggle-content_list-item_title:hover {
+  @apply shadow-none;
+}
+
+.block-toggle-content_list-item.toggled .block-toggle-content_list-item_title {
+  @apply rounded-br-none rounded-bl-none;
+}
+
+.block-toggle-content_list-item.toggled .block-toggle-content_list-item_title {
+  @apply bg-gradient-to-t from-color-primary/10 to-white;
+}
+
+.block-toggle-content_list-item.toggled .block-toggle-content_list-item_title:hover {
+  @apply bg-gradient-to-t from-color-primary/20 to-white;
+}
+
+.block-toggle-content { 
+  .block-toggle-content_list-item.toggled .block-toggle-content_list-item_content {
+    max-height: 1200px;
+  }
+}
+
+.block-toggle-content_list-item_content > * {
+  @apply text-slate-500 mx-auto mb-6 px-8;
+  &:first-child {
+    @apply mt-8;
+  }
+  &:last-child {
+    @apply mb-8;
+  }
+}
+@screen lg {
+  .block-toggle-content { 
+    .block-toggle-content_list-item_content > * {
+      @apply px-10;
+      &:first-child {
+        @apply mt-10;
+      }
+      &:last-child {
+        @apply mb-10;
+      }
+    }
+  }
+}
+@screen 2xl {
+  .block-toggle-content { 
+    .block-toggle-content_list-item_content > * {
+      @apply px-12;
+      
+      &:last-child {
+        @apply mb-12;
+      }
+    }
+  }
+}
+
+/* --- CONTENT CONTAINER CONTENT WYSIWYG ELEMENTS --- */
+.block-toggle-content { 
+  .block-toggle-content_list-item_content {
+    &:first-child {
+      @apply mt-6;
+    }
+    h4,
+    h5,
+    h6 {
+      @apply font-lato text-color-primary text-base;
+    }
+    p {
+      @apply leading-normal font-light;
+    }
+    ul {
+      @apply !list-disc font-light;
+    }
+    ol {
+      @apply !list-decimal font-light;
+    }
+    ul,
+    ol {
+      @apply list-outside ml-4;
+      li {
+        @apply mb-6;
+      }
+    }
+  }
+}
+
+/* --- BUTTON --- */
+.block-toggle-content { 
+  .block-toggle-content_list-item .block-toggle-content_list-item_button {
+    &:before {
+      content: '+';
+    }
+  }
+  .block-toggle-content_list-item.toggled .block-toggle-content_list-item_button {
+    &:before {
+      content: '-';
+    }
+  }
+}

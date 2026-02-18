@@ -1,0 +1,29 @@
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  @view-transition {
+    navigation: auto;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold font-lato leading-none text-color-primary tracking-tight;
+  }
+  ul,
+  ol {
+    @apply list-inside text-slate-500;
+  }
+  li {
+    @apply font-lato;
+  }
+  p {
+    @apply font-lato text-slate-500;
+  }
+  hr {
+    @apply my-8 md:my-12;
+  }
+}

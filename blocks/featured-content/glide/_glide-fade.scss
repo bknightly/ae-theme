@@ -1,0 +1,43 @@
+.glide-fade {
+    .glide__slides {
+        /* important needed because this is set using the style attribute */
+        transform: translate3d(0, 0, 0) !important;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .glide__slide {
+        will-change: contents;
+        position: absolute;
+        top: 0;
+        left: 0;
+        order: 2;
+        opacity: 0;
+        transition: opacity 250ms ease-in-out;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .glide__slide.glide__slide--active {
+        position: relative;
+        order: 1;
+        opacity: 1;
+        z-index: 1;
+    }
+    .glide__bullet:focus {
+        outline: none;
+    }
+    .glide__bullet:hover,
+    .glide__bullet:focus,
+    .glide__bullet--active {
+        @apply bg-white;
+    }
+    .glide--swipeable {
+        cursor: grab;
+        cursor: -moz-grab;
+        cursor: -webkit-grab;
+    }
+    .glide--dragging {
+        cursor: grabbing;
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing;
+    }
+}

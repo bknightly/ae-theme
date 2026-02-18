@@ -1,0 +1,19 @@
+@screen lg {
+  .headroom {
+    position: fixed;
+    will-change: transform;
+    transition: transform 200ms linear;
+    @apply border-b border-gray-200;
+  }
+  
+  .headroom--pinned {
+    transform: translateY(0%);
+  }
+  
+  .headroom--unpinned {
+    transform: translateY(-100%);
+  }  
+  .headroom--top {
+    @apply border-none;
+  }
+}

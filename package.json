@@ -1,0 +1,62 @@
+{
+  "name": "leh-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css-dev": "postcss ./assets/src/css/main.css -o ./assets/dist/css/style.css",
+    "css-dev-watch": "postcss ./assets/src/css/main.css -o ./assets/dist/css/style.css --watch",
+    "css": "NODE_ENV=production postcss ./assets/src/css/main.css -o ./assets/dist/css/style.min.css",
+    "css-watch": "NODE_ENV=production postcss ./assets/src/css/main.css -o ./assets/dist/css/style.min.css --watch",
+    "css-inline": "NODE_ENV=production postcss ./assets/src/css/main.css -o ./assets/dist/css/style.min.php",
+    "css-inline-watch": "NODE_ENV=production postcss ./assets/src/css/main.css -o ./assets/dist/css/style.min.php --watch",
+    "css-all": "npm run css-dev & npm run css & npm run css-inline",
+    "css-blocks-dev": "postcss ./blocks/assets/sass/leh-blocks.scss -o ./blocks/assets/css/leh-blocks.css",
+    "css-blocks": "NODE_ENV=production postcss ./blocks/assets/sass/leh-blocks.scss -o ./blocks/assets/css/leh-blocks.min.css",
+    "css-blocks-watch": "NODE_ENV=production postcss ./blocks/assets/sass/leh-blocks.scss -o ./blocks/assets/css/leh-blocks.min.css --watch",
+    "css-blocks-all": "npm run css-blocks-dev & npm run css-blocks",
+
+    "css-glide-fade-inline": "NODE_ENV=production postcss ./blocks/featured-content/glide/glide-fade.scss -o ./blocks/featured-content/glide/glide-fade.min.php",
+    "css-toggle-content-inline": "NODE_ENV=production postcss ./blocks/toggle-content/assets/toggle-content.scss -o ./blocks/toggle-content/assets/toggle-content.min.php",
+    
+    "js-dev": "webpack-cli ./assets/src/js/assign.js -o ./assets/dist/js --mode development",
+    "js-dev-watch": "webpack-cli ./assets/src/js/assign.js -o ./assets/dist/js --mode development --watch",
+    "js": "webpack-cli ./assets/src/js/assign.js -o ./assets/dist/js --mode production",
+    "js-watch": "webpack-cli ./assets/src/js/assign.js -o ./assets/dist/js --mode production --watch",
+    "dev": "npm run js-dev & npm run css-dev",
+    "dev-watch": "npm run js-dev-watch & npm run css-dev-watch",
+    "build": "npm run js & npm run css",
+    "build-watch": "npm run js-watch & npm run css-watch",
+    "build-inline-watch": "npm run js-watch & npm run css-inline-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bknightly/leh-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bknightly/leh-theme/issues"
+  },
+  "homepage": "https://github.com/bknightly/leh-theme#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.11",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "cssnano": "^5.1.14",
+    "postcss": "^8.4.20",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.2.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "@tailwindcss/forms": "^0.5.3",
+    "animejs": "^3.2.1",
+    "headroom.js": "^0.12.0",
+    "imask": "^6.4.3",
+    "micromodal": "^0.4.10"
+  }
+}

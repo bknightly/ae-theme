@@ -1,0 +1,26 @@
+input[type='text'],
+input[type='email'],
+input[type='date'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+select,
+select[multiple],
+textarea {
+  @apply rounded font-normal font-lato text-slate-500 border-slate-300 mt-0 mb-4 w-full text-sm px-2 py-1;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  @apply rounded border-slate-300 mr-2 mt-3 mb-4;
+}
+
+input[type='submit'] {
+  @apply w-full font-lato font-bold bg-gradient-to-tl from-color-primary-dark to-color-primary bg-no-repeat text-white px-12 py-4 mt-2 rounded-lg cursor-pointer transition-all duration-300 hover:opacity-70;
+}
+
+@screen lg {
+  input[type='submit'] {
+    @apply w-full;
+  }
+}

@@ -1,0 +1,8 @@
+@import "tailwindcss/base";
+@import "./partials/leh-theme/base.css";
+
+@import "tailwindcss/components";
+@import "./partials/leh-theme/components.css";
+
+@import "tailwindcss/utilities";
+/* @import "./partials/leh-theme/utilities.css"; */

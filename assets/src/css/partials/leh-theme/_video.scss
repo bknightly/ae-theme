@@ -1,0 +1,6 @@
+.wp-block-video {
+    @apply mb-10 last:mb-0;
+    video {
+        @apply w-full;
+    }
+}
