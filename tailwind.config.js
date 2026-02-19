@@ -20,10 +20,10 @@ module.exports = {
         lato: ['"Lato"','sans-serif']
       },
       colors: {
-        'color-primary': '#0073bb',
-        'color-primary-dark': '#046596',
-        'color-secondary': '#90c73e',
-        'color-secondary-dark': '#76a81e',
+        'color-primary': '#0174bb',
+        'color-primary-dark': '#005f8e',
+        'color-secondary': '#eb7db2',
+        'color-secondary-dark': '#c45b92',
       },
       fontSize: {
         xs: ['0.75rem'],
