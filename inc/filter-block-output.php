@@ -1,5 +1,5 @@
 <?php
-function leh_block_wrapper( $block_content, $block ) {
+function ae_block_wrapper( $block_content, $block ) {
 
 if ( $block['blockName'] === 'core/heading' ) {
     $content = '<div class="block-heading">';
@@ -22,4 +22,4 @@ if ( $block['blockName'] === 'core/embed' ) {
 return $block_content;
 }
 
-add_filter( 'render_block', 'leh_block_wrapper', 10, 2 );
+add_filter( 'render_block', 'ae_block_wrapper', 10, 2 );

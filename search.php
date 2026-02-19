@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package LEH_Theme
+ * @package AE_Theme
  */
 
 get_header(); ?>

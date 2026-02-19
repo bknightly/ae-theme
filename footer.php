@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package LEH_Theme
+ * @package AE_Theme
  */
 
 ?>
@@ -29,7 +29,7 @@
 	</nav><!-- #site-navigation -->
 	<ul class="flex-grow list-inside text-base mx-auto mb-8">
 		<li class="inline-block mx-3">
-			<a href="https://us.nextdoor.com/pages/laundry-express-honolulu-hi/" title="Nextdoor Reviews" rel="noopener" target="_blank">
+			<a href="https://us.nextdoor.com/" title="Nextdoor Reviews" rel="noopener" target="_blank">
 				<svg class="fill-white/80 hover:fill-white transition-colors w-8 h-8 lg:w-7 lg:h-7" enable-background="new 0 0 128 127" version="1.1" viewBox="0 0 128 127" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
 					<path d="m63.5 2c-34 0-61.5 27.5-61.5 61.5s27.5 61.5 61.5 61.5 61.5-27.5 61.5-61.5-27.5-61.5-61.5-61.5zm24.1 83.1h-12.3v-24.4c0-2.5-0.8-5.2-2.6-7-3.1-3.3-8.9-3.1-11.9 0.2-1.7 1.7-2.4 4.2-2.3 6.6 0 8.1-0.1 16.2 0.1 24.4-4.1 0.2-8.2 0.1-12.3 0.1-0.5-7.2-0.3-14.5-0.3-21.7-9.3-2.9-16.6-12-16.1-21.9 4 0.1 8.1 0 12.1 0.1 0.2 4 1.9 8 5.4 10.1 2.4-6 8.4-9.9 14.7-10.8 6.9-1 14.8 0 20 5.1 3.8 3.5 5.4 8.8 5.4 13.8 0.1 8.5 0.1 16.9 0.1 25.4z"/>
 				</svg>
@@ -45,7 +45,7 @@
 	</ul>
 	<div class="w-full md:w-4/5 mx-auto text-sm flex flex-col sm:flex-row flew-wrap justify-center opacity-80">
 		<div class="w-full sm:w-48 text-center mb-4 sm:mb-0"><?php the_field('store_address', 'option'); ?></div>
-		<div class="w-full font-lato sm:w-72 text-center mb-4 sm:mb-0">&copy; Copyright <?php echo date("Y"); ?> &bull; Laundry Express<br>All Rights Reserved.</div>
+		<div class="w-full font-lato sm:w-72 text-center mb-4 sm:mb-0">&copy; Copyright <?php echo date("Y"); ?> &bull; Alterations Express<br>All Rights Reserved.</div>
 		<div class="w-full sm:w-48 text-center"><?php the_field('business_hours', 'option'); ?></div>
 	</div>
 	<?php if ( get_edit_post_link() ) : ?>

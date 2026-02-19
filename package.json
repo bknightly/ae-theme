@@ -1,5 +1,5 @@
 {
-  "name": "leh-theme",
+  "name": "ae-theme",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,9 +11,9 @@
     "css-inline": "NODE_ENV=production postcss ./assets/src/css/main.css -o ./assets/dist/css/style.min.php",
     "css-inline-watch": "NODE_ENV=production postcss ./assets/src/css/main.css -o ./assets/dist/css/style.min.php --watch",
     "css-all": "npm run css-dev & npm run css & npm run css-inline",
-    "css-blocks-dev": "postcss ./blocks/assets/sass/leh-blocks.scss -o ./blocks/assets/css/leh-blocks.css",
-    "css-blocks": "NODE_ENV=production postcss ./blocks/assets/sass/leh-blocks.scss -o ./blocks/assets/css/leh-blocks.min.css",
-    "css-blocks-watch": "NODE_ENV=production postcss ./blocks/assets/sass/leh-blocks.scss -o ./blocks/assets/css/leh-blocks.min.css --watch",
+    "css-blocks-dev": "postcss ./blocks/assets/sass/ae-blocks.scss -o ./blocks/assets/css/ae-blocks.css",
+    "css-blocks": "NODE_ENV=production postcss ./blocks/assets/sass/ae-blocks.scss -o ./blocks/assets/css/ae-blocks.min.css",
+    "css-blocks-watch": "NODE_ENV=production postcss ./blocks/assets/sass/ae-blocks.scss -o ./blocks/assets/css/ae-blocks.min.css --watch",
     "css-blocks-all": "npm run css-blocks-dev & npm run css-blocks",
 
     "css-glide-fade-inline": "NODE_ENV=production postcss ./blocks/featured-content/glide/glide-fade.scss -o ./blocks/featured-content/glide/glide-fade.min.php",
@@ -31,14 +31,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bknightly/leh-theme.git"
+    "url": "git+https://github.com/bknightly/ae-theme.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bknightly/leh-theme/issues"
+    "url": "https://github.com/bknightly/ae-theme/issues"
   },
-  "homepage": "https://github.com/bknightly/leh-theme#readme",
+  "homepage": "https://github.com/bknightly/ae-theme#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "browser-sync": "^2.27.11",

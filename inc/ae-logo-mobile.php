@@ -1,8 +1,8 @@
-<svg class="w-[30%] lg:w-[35%] xl:w-[40%] py-2 h-auto transition-opacity will-change-transform hover:opacity-60" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg class="w-1/2 py-2 h-auto mx-auto transition-opacity will-change-transform hover:opacity-60" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 273 177.9" style="enable-background:new 0 0 273 177.9;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#8EC63E;}
-	.st1{fill:#0073BA;}
+          .st0{fill:#ed7db1;}
+          .st1{fill:#0274bb;}
 	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#1A1718;}
 	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;}
 </style>

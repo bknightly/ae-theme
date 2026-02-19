@@ -6,18 +6,18 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package LEH_Theme
+ * @package AE_Theme
  */
 
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<?php require('inc/google-analytics.php'); ?>
+	<?php // require('inc/google-analytics.php'); ?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri();?>/images/laundry-express-favicon.ico">
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri();?>/images/alterations-express-favicon.ico">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -47,7 +47,7 @@
 			<?php
 		endif; ?>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-			<?php include('inc/leh-logo.php'); ?>
+			<?php include('inc/ae-logo.php'); ?>
 		</a>
 		<nav id="header-nav" class="header-nav">
 			<h1 class="hidden">Navigation</h1>
@@ -62,7 +62,7 @@
 			</button>
 			<div class="header-nav-overlay">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="mx-auto block mt-2 mb-6 xl:hidden">
-					<?php include('inc/leh-logo-mobile.php'); ?>
+					<?php include('inc/ae-logo-mobile.php'); ?>
 				</a>
 				<?php
 				wp_nav_menu(
@@ -92,7 +92,7 @@
 				?>
 				<ul class="hidden xl:block text-center mb-4 xl:mb-0 xl:ml-3">
 					<li class="header-social-links_list-item inline-block h-full">
-						<a href="https://us.nextdoor.com/pages/laundry-express-honolulu-hi/" class="h-full flex items-center" title="Yelp! Reviews" rel="noopener" target="_blank">
+						<a href="https://us.nextdoor.com/" class="h-full flex items-center" title="Yelp! Reviews" rel="noopener" target="_blank">
 							<svg class="w-8 h-8 xl:w-6 xl:h-6 fill-white xl:fill-color-primary transition-opacity xl:hover:opacity-70" enable-background="new 0 0 128 127" version="1.1" viewBox="0 0 128 127" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
 								<path d="m63.5 2c-34 0-61.5 27.5-61.5 61.5s27.5 61.5 61.5 61.5 61.5-27.5 61.5-61.5-27.5-61.5-61.5-61.5zm24.1 83.1h-12.3v-24.4c0-2.5-0.8-5.2-2.6-7-3.1-3.3-8.9-3.1-11.9 0.2-1.7 1.7-2.4 4.2-2.3 6.6 0 8.1-0.1 16.2 0.1 24.4-4.1 0.2-8.2 0.1-12.3 0.1-0.5-7.2-0.3-14.5-0.3-21.7-9.3-2.9-16.6-12-16.1-21.9 4 0.1 8.1 0 12.1 0.1 0.2 4 1.9 8 5.4 10.1 2.4-6 8.4-9.9 14.7-10.8 6.9-1 14.8 0 20 5.1 3.8 3.5 5.4 8.8 5.4 13.8 0.1 8.5 0.1 16.9 0.1 25.4z"/>
 							</svg>

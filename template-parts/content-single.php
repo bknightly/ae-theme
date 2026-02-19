@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package LEH_Theme
+ * @package AE_Theme
  */
 
 ?>
@@ -14,7 +14,7 @@
 		sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'leh-theme' ),
+				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'ae-theme' ),
 				array(
 					'span' => array(
 						'class' => array(),
@@ -27,7 +27,7 @@
 
 	wp_link_pages(
 		array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'leh-theme' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ae-theme' ),
 			'after'  => '</div>',
 		)
 	);

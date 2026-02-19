@@ -1,6 +1,6 @@
 <?php
 
-function leh_allowed_block_types( $allowed_blocks ) {
+function ae_allowed_block_types( $allowed_blocks ) {
 	return array(
     'core/image',
     'core/video',
@@ -24,6 +24,6 @@ function leh_allowed_block_types( $allowed_blocks ) {
     'acf/toggle-content'
 	);
 }
-add_filter( 'allowed_block_types_all', 'leh_allowed_block_types' );
+add_filter( 'allowed_block_types_all', 'ae_allowed_block_types' );
 
 ?>

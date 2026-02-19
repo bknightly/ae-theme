@@ -1,8 +1,8 @@
 <?php
 /**
- * LEH Theme Theme Customizer
+ * AE Theme Theme Customizer
  *
- * @package LEH_Theme
+ * @package AE_Theme
  */
 
 /**
@@ -10,7 +10,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function leh_theme_customize_register( $wp_customize ) {
+function ae_theme_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -20,26 +20,26 @@ function leh_theme_customize_register( $wp_customize ) {
 			'blogname',
 			array(
 				'selector'        => '.site-title a',
-				'render_callback' => 'leh_theme_customize_partial_blogname',
+				'render_callback' => 'ae_theme_customize_partial_blogname',
 			)
 		);
 		$wp_customize->selective_refresh->add_partial(
 			'blogdescription',
 			array(
 				'selector'        => '.site-description',
-				'render_callback' => 'leh_theme_customize_partial_blogdescription',
+				'render_callback' => 'ae_theme_customize_partial_blogdescription',
 			)
 		);
 	}
 }
-add_action( 'customize_register', 'leh_theme_customize_register' );
+add_action( 'customize_register', 'ae_theme_customize_register' );
 
 /**
  * Render the site title for the selective refresh partial.
  *
  * @return void
  */
-function leh_theme_customize_partial_blogname() {
+function ae_theme_customize_partial_blogname() {
 	bloginfo( 'name' );
 }
 
@@ -48,14 +48,14 @@ function leh_theme_customize_partial_blogname() {
  *
  * @return void
  */
-function leh_theme_customize_partial_blogdescription() {
+function ae_theme_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function leh_theme_customize_preview_js() {
-	wp_enqueue_script( 'leh-theme-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
+function ae_theme_customize_preview_js() {
+	wp_enqueue_script( 'ae-theme-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
 }
-add_action( 'customize_preview_init', 'leh_theme_customize_preview_js' );
+add_action( 'customize_preview_init', 'ae_theme_customize_preview_js' );

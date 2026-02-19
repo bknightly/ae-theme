@@ -7,7 +7,7 @@
       <h1 class="text-white text-4xl md:text-5xl lg:text-6xl px-6 md:px-14">
         <?php
           /* translators: %s: search query. */
-          printf( esc_html__( 'Search Results: %s', 'leh-theme' ), get_search_query() );
+          printf( esc_html__( 'Search Results: %s', 'ae-theme' ), get_search_query() );
         ?>
       </h1>
     </div>

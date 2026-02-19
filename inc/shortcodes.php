@@ -2,7 +2,7 @@
 
 // Three sub sections on home page (after hero section)
 // [home-page-sections]
-function leh_shortcode_home_page_sections($atts) {  
+function ae_shortcode_home_page_sections($atts) {  
 
     $section1_image = get_field('section_1_image');
     $section1_title = get_field('section_1_title');
@@ -70,12 +70,12 @@ function leh_shortcode_home_page_sections($atts) {
     ';
     return $output;
  }
-add_shortcode("home-page-sections", "leh_shortcode_home_page_sections");
+add_shortcode("home-page-sections", "ae_shortcode_home_page_sections");
 
 
 // Displays most recent blog post on Home page
 // [home-page-blog-excerpt]
-function leh_shortcode_home_page_blog_excerpt($atts) {
+function ae_shortcode_home_page_blog_excerpt($atts) {
   $featured_post = new WP_Query( array(
     'post_type'      => 'post',
     'posts_per_page' => 1,
@@ -121,12 +121,12 @@ function leh_shortcode_home_page_blog_excerpt($atts) {
   }
   return $output_final;
 }
-add_shortcode("home-page-blog-excerpt", "leh_shortcode_home_page_blog_excerpt");
+add_shortcode("home-page-blog-excerpt", "ae_shortcode_home_page_blog_excerpt");
 
 
 // Grid that lists child service pages
 // [service-page-grid]
-function leh_shortcode_service_page_grid($atts) {
+function ae_shortcode_service_page_grid($atts) {
     $child_pages = new WP_Query( array(
         'post_type'      => 'page',
         'post_parent'    => 14, // 14 = About page
@@ -161,11 +161,11 @@ function leh_shortcode_service_page_grid($atts) {
     }
     return $output_final;
  }
-add_shortcode("service-page-grid", "leh_shortcode_service_page_grid");
+add_shortcode("service-page-grid", "ae_shortcode_service_page_grid");
 
 // Grid that displays contact info on Contact page
 // [contact-page-grid]
-function leh_shortcode_contact_page_grid($atts) {  
+function ae_shortcode_contact_page_grid($atts) {  
     $phone_number = get_field( "phone_number" );
     $email_address = get_field( "email_address" );
     $address = get_field( "address" );      
@@ -182,4 +182,4 @@ function leh_shortcode_contact_page_grid($atts) {
     ';
     return $output;
  }
-add_shortcode("contact-page-grid", "leh_shortcode_contact_page_grid");
+add_shortcode("contact-page-grid", "ae_shortcode_contact_page_grid");

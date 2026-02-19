@@ -9,12 +9,12 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package LEH_Theme
+ * @package AE_Theme
  */
 
 get_header(); ?>
 <main id="body">
-	<h1 class="hidden">Laundry Express</h1>
+	<h1 class="hidden">Alterations Express</h1>
 	<?php
 	while ( have_posts() ) :
 		the_post();

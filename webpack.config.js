@@ -7,7 +7,7 @@ module.exports = {
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
-      proxy: 'http://localhost:8888/leh/',
+      proxy: 'http://localhost:8888/ae/',
       files: [
         './**/*.php',
         './**/*.html',
