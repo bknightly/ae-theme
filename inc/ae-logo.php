@@ -1,4 +1,4 @@
-<svg class="w-[30%] lg:w-[35%] xl:w-[40%] py-2 h-auto transition-opacity will-change-transform hover:opacity-60" enable-background="new 0 0 354 177.9" version="1.1" viewBox="0 0 354 177.9" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<svg class="w-[40%] lg:w-[45%] xl:w-[55%] py-2 h-auto transition-opacity will-change-transform hover:opacity-60" enable-background="new 0 0 354 177.9" version="1.1" viewBox="0 0 354 177.9" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
 	<style type="text/css">
 		.st0{display:none;}
 		.st1{display:inline;}
