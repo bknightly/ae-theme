@@ -6,7 +6,7 @@ function ae_login_logo() { ?>
         #login { padding: 4% 0 0 !important; }
         #login h1 a, 
         .login h1 a { 
-            background: url('<?php echo get_stylesheet_directory_uri(); ?>/images/laundry-express-logo.svg') no-repeat center center;
+            background: url('<?php echo get_stylesheet_directory_uri(); ?>/images/alterations-express-logo.svg') no-repeat center center;
             height: 100px;
             width: 320px;
             margin: 30px auto 0;
