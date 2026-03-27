@@ -29,13 +29,6 @@
 	</nav><!-- #site-navigation -->
 	<ul class="flex-grow list-inside text-base mx-auto mb-8">
 		<li class="inline-block mx-3">
-			<a href="https://us.nextdoor.com/" title="Nextdoor Reviews" rel="noopener" target="_blank">
-				<svg class="fill-white/80 hover:fill-white transition-colors w-8 h-8 lg:w-7 lg:h-7" enable-background="new 0 0 128 127" version="1.1" viewBox="0 0 128 127" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-					<path d="m63.5 2c-34 0-61.5 27.5-61.5 61.5s27.5 61.5 61.5 61.5 61.5-27.5 61.5-61.5-27.5-61.5-61.5-61.5zm24.1 83.1h-12.3v-24.4c0-2.5-0.8-5.2-2.6-7-3.1-3.3-8.9-3.1-11.9 0.2-1.7 1.7-2.4 4.2-2.3 6.6 0 8.1-0.1 16.2 0.1 24.4-4.1 0.2-8.2 0.1-12.3 0.1-0.5-7.2-0.3-14.5-0.3-21.7-9.3-2.9-16.6-12-16.1-21.9 4 0.1 8.1 0 12.1 0.1 0.2 4 1.9 8 5.4 10.1 2.4-6 8.4-9.9 14.7-10.8 6.9-1 14.8 0 20 5.1 3.8 3.5 5.4 8.8 5.4 13.8 0.1 8.5 0.1 16.9 0.1 25.4z"/>
-				</svg>
-			</a>
-		</li>
-		<li class="inline-block mx-3">
 			<button data-micromodal-trigger="modal-call-us" title="Call Us">
 				<svg class="fill-white/80 hover:fill-white transition-colors w-8 h-8 lg:w-7 lg:h-7" enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
 					<path d="m16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zm4.7 22.3h-9.5c-1 0-1.7-0.9-1.6-1.9l0.4-2.8c0.1-0.5 0.5-1 1-1.1 2.1-0.5 2.6-1.7 2.7-3 0.4-0.1 1-0.1 2.2-0.1s1.8 0.1 2.2 0.1c0.1 1.3 0.6 2.6 2.7 3 0.5 0.1 1 0.6 1 1.1l0.4 2.8c0.3 1-0.5 1.9-1.5 1.9zm1.3-8.2c-2.4-0.3-2.2-1.1-2.2-2.3 0-0.8-1.9-1-3.8-1s-3.8 0.2-3.8 1c0 1.2 0.1 2-2.2 2.3-2 0.3-2.1-0.3-2.1-1.5s3.1-4.3 8.1-4.3 8.1 2 8.1 3.3c0 1.1 0 2.7-2.1 2.5zm-3.9 4.1c0 1.1-0.9 2-2.1 2-1.1 0-2.1-0.9-2.1-2s0.9-2 2.1-2 2.1 0.9 2.1 2z"/>
