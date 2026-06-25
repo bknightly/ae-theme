@@ -120,3 +120,24 @@ function toggleContainer(el) {
   }
 }
 document.addEventListener('click', toggleContainer, true);
+
+// Clear customer feedback CF7 form fiels from "Customer Service Form" in Footer when hidden
+// -- Fixes clear_on_hide CF7 form field validation error using conditional fields)
+document.addEventListener('DOMContentLoaded', function () {
+    const subjectField = document.querySelector('select[name="your-subject"]');
+    const starRatingField = document.querySelector('select[name="star-rating"]');
+    const storeLocationField = document.querySelector('select[name="store-location"]');
+
+    if (!subjectField) return;
+
+    subjectField.addEventListener('change', function () {
+        // Clear star rating unless feedback
+        if (this.value !== 'Customer Feedback' && starRatingField) {
+            starRatingField.selectedIndex = 0;
+        }
+        // Clear store location unless quote request
+        if (this.value !== 'Request A Quote' && storeLocationField) {
+            storeLocationField.selectedIndex = 0;
+        }
+    });
+});

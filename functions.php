@@ -191,3 +191,6 @@ require get_template_directory() . '/inc/disable-unused-gutenberg-patterns.php';
 
 // Remove unused inline global CSS used for FSE
 require get_template_directory() . '/inc/remove-fse-inline-styles.php';
+
+// Remove unused inline global CSS used for FSE
+require get_template_directory() . '/inc/cf7-extra-customer-feedback-email.php';
