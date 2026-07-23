@@ -83,16 +83,23 @@ jQuery('.wpcf7-submit').on('click',function(){
   jQuery(this).val("Submitting...");
 });
 
-// Disable submit button while form is processing submission
-// From: https://stackoverflow.com/questions/53760658/how-to-disable-submit-button-and-change-text-on-form-submit-at-wordpress-contac#answer-53761200#answer-70091146 (modified from last answer)
-jQuery('.wpcf7-form').submit(function() {
-  jQuery(this).find(':input[type=submit]').prop('disabled', true);  
-  document.addEventListener('wpcf7submit', function(event) {
-      jQuery('.wpcf7-submit').prop("disabled", false);
-  }, false);
-  document.addEventListener('wpcf7invalid', function() {
-      jQuery('.wpcf7-submit').prop("disabled", false);
-  }, false);
+jQuery(function ($) {
+    // Disable the submit button only after Contact Form 7 has validated
+    // the form and is about to send the AJAX request.
+    document.addEventListener('wpcf7beforesubmit', function (event) {
+        $(event.target).find('.wpcf7-submit').prop('disabled', true);
+    });
+    // Re-enable the submit button after Contact Form 7 finishes processing.
+    // A short delay ensures this runs after CF7 completes its own button updates.
+    function enableSubmitButton(event) {
+        setTimeout(function () {
+            $(event.target).find('.wpcf7-submit').prop('disabled', false);
+        }, 250);
+    }
+
+    // Restore the button after successful submissions or validation failures.
+    document.addEventListener('wpcf7submit', enableSubmitButton);
+    document.addEventListener('wpcf7invalid', enableSubmitButton);
 });
 
 // console.log('glide loaded in front end footer');
