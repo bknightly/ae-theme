@@ -31,7 +31,7 @@ function cf7_add_bcc_on_high_rating($contact_form) {
 
         $mail = $contact_form->prop('mail');
 
-        $extra_email = 'pachawaiiservices@aafes.com';
+        $extra_email = 'xxpachawaiiservices@aafes.com';
 
         // Add BCC header
         if (!empty($mail['additional_headers'])) {
