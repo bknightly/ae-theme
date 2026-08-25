@@ -52,7 +52,7 @@ function ae_enqueue_custom_blocks_in_admin() {
   $filename = '/js/embed-youtube-vimeo-only.js';
   if ( file_exists(get_template_directory() . $filename) !== false ) {
     $version = date ("YmdHis", filemtime(get_template_directory() . $filename));
-    wp_register_script( 'embed-youtube-vimeo-only', get_template_directory_uri() . $filename, array(), $version, true );
+    wp_register_script( 'embed-youtube-vimeo-only', get_template_directory_uri() . $filename, array( 'wp-dom-ready', 'wp-blocks' ), $version, true );
     wp_enqueue_script( 'embed-youtube-vimeo-only' );
   }
   // Add blocks JS in editor pages
@@ -71,4 +71,4 @@ function ae_enqueue_custom_blocks_in_admin() {
     }
   }
 }
-add_action( 'enqueue_block_editor_assets', 'ae_enqueue_custom_blocks_in_admin' );
+add_action( 'enqueue_block_assets', 'ae_enqueue_custom_blocks_in_admin' );
