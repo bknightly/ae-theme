@@ -56,11 +56,13 @@ function ae_enqueue_custom_blocks_in_admin() {
     wp_enqueue_script( 'embed-youtube-vimeo-only' );
   }
   // Add blocks JS in editor pages
-  $filename = '/blocks/toggle-content/toggle-content-editor.js';
-  if ( file_exists(get_template_directory() . $filename) !== false ) {
-    $version = date ("YmdHis", filemtime(get_template_directory() . $filename));
-    wp_register_script( 'toggle-content-editor', get_template_directory_uri() . $filename, array(), $version, true );
-    wp_enqueue_script( 'toggle-content-editor' );
+  if ( is_admin() ) {
+    $filename = '/blocks/toggle-content/toggle-content-editor.js';
+    if ( file_exists(get_template_directory() . $filename) !== false ) {
+      $version = date ("YmdHis", filemtime(get_template_directory() . $filename));
+      wp_register_script( 'toggle-content-editor', get_template_directory_uri() . $filename, array(), $version, true );
+      wp_enqueue_script( 'toggle-content-editor' );
+    }
   }
   if ( has_block( 'acf/featured-content' ) ) {
     $filename = '/blocks/featured-content/glide/glide.min.js';
