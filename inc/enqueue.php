@@ -44,32 +44,32 @@ add_action( 'wp_enqueue_scripts', 'ae_theme_enqueue' );
 
 // Load assets in Dashboard page/post editor
 function ae_enqueue_custom_blocks_in_admin() {
-	$filename = '/blocks/assets/css/ae-blocks.min.css';
-	if ( file_exists(get_template_directory() . $filename) !== false ) {
-		$version = date ("YmdHis", filemtime(get_template_directory() . $filename));
-		wp_enqueue_style( 'ae-blocks', get_template_directory_uri() . $filename, false, $version, 'all' );
-  }
-  $filename = '/js/embed-youtube-vimeo-only.js';
-  if ( file_exists(get_template_directory() . $filename) !== false ) {
-    $version = date ("YmdHis", filemtime(get_template_directory() . $filename));
-    wp_register_script( 'embed-youtube-vimeo-only', get_template_directory_uri() . $filename, array( 'wp-dom-ready', 'wp-blocks' ), $version, true );
-    wp_enqueue_script( 'embed-youtube-vimeo-only' );
-  }
-  // Add blocks JS in editor pages
+  // Add blocks JS in editor pages only
   if ( is_admin() ) {
+    $filename = '/blocks/assets/css/ae-blocks.min.css';
+    if ( file_exists(get_template_directory() . $filename) !== false ) {
+      $version = date ("YmdHis", filemtime(get_template_directory() . $filename));
+      wp_enqueue_style( 'ae-blocks', get_template_directory_uri() . $filename, false, $version, 'all' );
+    }
+    $filename = '/js/embed-youtube-vimeo-only.js';
+    if ( file_exists(get_template_directory() . $filename) !== false ) {
+      $version = date ("YmdHis", filemtime(get_template_directory() . $filename));
+      wp_register_script( 'embed-youtube-vimeo-only', get_template_directory_uri() . $filename, array( 'wp-dom-ready', 'wp-blocks' ), $version, true );
+      wp_enqueue_script( 'embed-youtube-vimeo-only' );
+    }
     $filename = '/blocks/toggle-content/toggle-content-editor.js';
     if ( file_exists(get_template_directory() . $filename) !== false ) {
       $version = date ("YmdHis", filemtime(get_template_directory() . $filename));
       wp_register_script( 'toggle-content-editor', get_template_directory_uri() . $filename, array(), $version, true );
       wp_enqueue_script( 'toggle-content-editor' );
     }
-  }
-  if ( has_block( 'acf/featured-content' ) ) {
-    $filename = '/blocks/featured-content/glide/glide.min.js';
-    if ( file_exists(get_template_directory() . $filename) !== false ) {
-      $version = date ("YmdHis", filemtime(get_template_directory() . $filename));
-      wp_register_script( 'glide-min', get_template_directory_uri() . $filename, array(), $version, true );
-      wp_enqueue_script( 'glide-min' );
+    if ( has_block( 'acf/featured-content' ) ) {
+      $filename = '/blocks/featured-content/glide/glide.min.js';
+      if ( file_exists(get_template_directory() . $filename) !== false ) {
+        $version = date ("YmdHis", filemtime(get_template_directory() . $filename));
+        wp_register_script( 'glide-min', get_template_directory_uri() . $filename, array(), $version, true );
+        wp_enqueue_script( 'glide-min' );
+      }
     }
   }
 }
